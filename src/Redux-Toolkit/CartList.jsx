@@ -27,6 +27,7 @@ export function CartListt() {
               <img src={prod.images[0]} width={200} height={200} />
             </p>
             <p>${prod.price}</p>
+
             <button
               onClick={() => {
                 ``;

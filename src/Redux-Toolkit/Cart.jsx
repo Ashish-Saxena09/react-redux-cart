@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTocart } from "./cartSlicer";
+import { Link } from "react-router-dom";
 
 export function Cartt() {
   const [productList, setProductlist] = useState([]);
@@ -53,6 +54,8 @@ export function Cartt() {
                   </button>
 
                   <p>${product.price}</p>
+
+                  <Link to={`/product/${product.id}`}>View Product</Link>
 
                   <button
                     onClick={() => {
